@@ -91,7 +91,7 @@ export default function Footer() {
 
               <p className="flex items-start gap-3">
                 <MapIcon className="h-5 w-5 text-[#f2b705] mt-0.5" />
-                <span>Pan-India delivery</span>
+                <span>PAN-India delivery</span>
               </p>
             </div>
 

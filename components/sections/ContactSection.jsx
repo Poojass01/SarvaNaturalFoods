@@ -44,7 +44,7 @@ export default function ContactSection({ whatsappNumber }) {
                 <p className="text-sm uppercase tracking-[0.3em] text-[#a0782d]">Call / WhatsApp</p>
                 <p className="text-xl sm:text-2xl font-display text-[#2a1b08]">+91 86082 01333</p>
                 <p className="text-xl sm:text-2xl font-display text-[#2a1b08]">+91 86083 01333</p>
-                <p className="text-sm text-[#7a6130]">Daily 7 AM – 10 PM IST</p>
+                
               </div>
             </div>
             <div className="modern-card p-6 flex items-center gap-4">

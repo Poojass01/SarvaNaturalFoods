@@ -1,2 +1,9 @@
 [00:00:03.124] Server  LOG     ✓ Ready in 1887ms
 [00:00:05.194] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[00:03:14.813] Browser WARN    Image with src "/icons/33.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:14.813] Browser WARN    Image with src "/icons/23.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:14.991] Browser WARN    Image with src "/icons/63.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:14.992] Browser WARN    Image with src "/icons/43.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:14.992] Browser WARN    Image with src "/icons/533.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:17.287] Server  LOG     ✓ Compiled in 6.2s
+[00:04:27.495] Server  LOG     ✓ Compiled in 904ms
