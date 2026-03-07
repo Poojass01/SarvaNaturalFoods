@@ -297,7 +297,19 @@ self.__SERVER_FILES_MANIFEST={
     "turbopack": {
       "root": "D:\\WEBSITES\\GheeModified1\\Ghee"
     },
-    "distDirRoot": ".next"
+    "distDirRoot": ".next",
+    "_originalRedirects": [
+      {
+        "source": "/products/:path*",
+        "destination": "/",
+        "permanent": true
+      },
+      {
+        "source": "/sitemap_products_1.xml",
+        "destination": "/sitemap.xml",
+        "permanent": true
+      }
+    ]
   },
   "appDir": "D:\\WEBSITES\\GheeModified1\\Ghee",
   "relativeAppDir": "",

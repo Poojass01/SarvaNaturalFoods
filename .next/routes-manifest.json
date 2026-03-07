@@ -12,6 +12,18 @@
       "priority": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/sitemap_products_1.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/sitemap_products_1\\.xml(?:/)?$"
     }
   ],
   "headers": [],
@@ -39,6 +51,18 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/apple-icon.png",
+      "regex": "^/apple\\-icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apple\\-icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/icon.png",
+      "regex": "^/icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.png(?:/)?$"
     },
     {
       "page": "/robots.txt",

@@ -4,13 +4,15 @@
 type AppRoutes = never
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/products/[[...path]]" | "/sitemap_products_1.xml"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/products/[[...path]]": { "path"?: string[]; }
+  "/sitemap_products_1.xml": {}
 }
 
 
