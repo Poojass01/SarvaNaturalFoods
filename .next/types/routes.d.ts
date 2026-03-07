@@ -4,14 +4,23 @@
 type AppRoutes = never
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = "/products/[[...path]]" | "/sitemap_products_1.xml"
+type RedirectRoutes = "/blogs/[[...path]]" | "/cart" | "/collections/[[...path]]" | "/pages/[[...path]]" | "/policies/[[...path]]" | "/products/[[...path]]" | "/search" | "/sitemap_blogs_1.xml" | "/sitemap_collections_1.xml" | "/sitemap_pages_1.xml" | "/sitemap_products_1.xml"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/blogs/[[...path]]": { "path"?: string[]; }
+  "/cart": {}
+  "/collections/[[...path]]": { "path"?: string[]; }
+  "/pages/[[...path]]": { "path"?: string[]; }
+  "/policies/[[...path]]": { "path"?: string[]; }
   "/products/[[...path]]": { "path"?: string[]; }
+  "/search": {}
+  "/sitemap_blogs_1.xml": {}
+  "/sitemap_collections_1.xml": {}
+  "/sitemap_pages_1.xml": {}
   "/sitemap_products_1.xml": {}
 }
 
