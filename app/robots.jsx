@@ -1,4 +1,4 @@
-const siteUrl = 'https://sarvaghee.in'
+const siteUrl = 'https://sarvanaturalfoods.com'
 
 export default function robots() {
   return {

@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://sarvaghee.in'
+  const baseUrl = 'https://sarvanaturalfoods.com'
   const lastModified = new Date()
 
   return [
