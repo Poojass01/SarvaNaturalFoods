@@ -1,9 +1,9 @@
 import HomePage from '../components/HomePage'
 
 export const metadata = {
-  title: 'Sarva Natural Foods | Pure A2 Bilona Cow Ghee — Traditional Wood-Churned Desi Ghee',
+  title: 'Sarva Natural Foods | Indian Desi Cow Ghee — Traditional Wood-Churned Desi Ghee',
   description:
-    'Buy pure A2 bilona cow ghee online from Sarva Natural Foods. 50+ years of dairy tradition. Handcrafted from native Gir & Kangeyam cows, slow-simmered over firewood. FSSAI certified. Glass jar packaging. Free delivery across India — Tirupur, Chennai & pan-India.',
+    'Buy Indian desi cow ghee online from Sarva Natural Foods. 50+ years of dairy tradition. Handcrafted from native Gir & Kangeyam cows, slow-simmered over firewood. FSSAI certified. Glass jar packaging. Free delivery across India — Tirupur, Chennai & pan-India.',
   keywords: [
     'pure cow ghee', 'A2 ghee online', 'bilona ghee', 'desi ghee', 'wood churned ghee',
     'grass fed ghee', 'traditional ghee', 'organic ghee India',
