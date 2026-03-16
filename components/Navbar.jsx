@@ -44,50 +44,53 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50 bg-[#fffaf0]/90 shadow-lg backdrop-blur-xl py-0 transition-all duration-300 overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 sm:h-16 md:h-18 lg:h-20">
-          <button
-            onClick={() => scrollToSection("top")}
-            className="flex items-center"
-          >
-            <Image
-              src="/logo/logo3.png"
-              alt="Sarva Natural Foods"
-              width={280}
-              height={100}
-              priority
-              className="h-20 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
-            />
-          </button>
+<div className="flex items-center justify-between h-20 sm:h-16 md:h-18 lg:h-20">
 
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => scrollToSection(link.section)}
-                className="text-[#5e4521] hover:text-[#2f1b05] transition duration-200 font-medium relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#f2b705] transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
-            <button
-              onClick={() => scrollToSection("products")}
-              className="bg-gradient-to-r from-[#ffd166] via-[#f4b124] to-[#e08a00] text-[#2f1b05] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition duration-300 hover:-translate-y-0.5"
-            >
-              Order Now
-            </button>
-          </div>
+  {/* Logo */}
+<button
+  onClick={() => scrollToSection("top")}
+  className="flex items-center gap-2 sm:gap-3"
+>
+  <Image
+    src="/logo/logo3.png"
+    alt="Sarva Natural Foods"
+    width={280}
+    height={100}
+    priority
+    className="h-16 sm:h-16 md:h-18 lg:h-20 w-auto object-contain"
+  />
 
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-[#5e4521] hover:text-[#2f1b05] transition duration-300 p-2 rounded-xl bg-white/80 shadow"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <CloseIcon /> : <MenuIcon />}
-            </button>
-          </div>
-        </div>
+  {/* Brand Name */}
+  <span className="text-[#5e4521] font-semibold tracking-wide
+  text-sm sm:text-base md:text-lg lg:text-xl">
+    Sarva Natural Foods
+  </span>
+</button>
+
+  {/* Desktop Menu */}
+  <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+    {navLinks.map((link) => (
+      <button
+        key={link.label}
+        onClick={() => scrollToSection(link.section)}
+        className="text-[#5e4521] hover:text-[#2f1b05] transition duration-200 font-medium relative group"
+      >
+        {link.label}
+      </button>
+    ))}
+  </div>
+
+  {/* Mobile Menu Icon */}
+  <div className="md:hidden">
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="text-[#5e4521] p-2 rounded-xl bg-white/80 shadow"
+    >
+      {isOpen ? <CloseIcon /> : <MenuIcon />}
+    </button>
+  </div>
+
+</div>
 
         {isOpen && (
           <div className="md:hidden mt-4 bg-white/90 border border-[#fde4b0] rounded-2xl p-4 shadow-xl animate-fade-in-up">

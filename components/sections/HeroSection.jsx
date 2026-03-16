@@ -49,7 +49,7 @@ export default function HeroSection({ whatsappNumber }) {
 
           <div className="flex flex-col items-center w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[420px] mx-auto mt-6 lg:mt-0 lg:translate-x-12 pb-10 lg:pb-0">
             <Image
-              src="/image/ghee_site2.png"
+              src="/image/ghee_site24.png"
               alt="SARVA Pure Cow Ghee Jar"
               width={600}
               height={800}

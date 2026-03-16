@@ -96,7 +96,7 @@ export default function AboutSection() {
               </p>
             </div>
             <Image
-              src="/image/ghee_223.png"
+              src="/image/ghee_22333.png"
               alt="Milk supply operations"
               width={600}
               height={600}

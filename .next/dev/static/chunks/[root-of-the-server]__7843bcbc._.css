@@ -966,6 +966,10 @@ body {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1718,6 +1722,10 @@ body {
   letter-spacing: .05em;
 }
 
+.tracking-wide {
+  letter-spacing: .025em;
+}
+
 .text-\[\#2a1b08\] {
   --tw-text-opacity: 1;
   color: rgb(42 27 8 / var(--tw-text-opacity, 1));
@@ -2436,6 +2444,11 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2584,6 +2597,11 @@ body {
 
   .lg\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
