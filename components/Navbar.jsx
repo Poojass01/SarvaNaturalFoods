@@ -44,53 +44,53 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50 bg-[#fffaf0]/90 shadow-lg backdrop-blur-xl py-0 transition-all duration-300 overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div className="flex items-center justify-between h-20 sm:h-16 md:h-18 lg:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-16 md:h-18 lg:h-20">
 
-  {/* Logo */}
-<button
-  onClick={() => scrollToSection("top")}
-  className="flex items-center gap-2 sm:gap-3"
->
-  <Image
-    src="/logo/logo3.png"
-    alt="Sarva Natural Foods"
-    width={280}
-    height={100}
-    priority
-    className="h-16 sm:h-16 md:h-18 lg:h-20 w-auto object-contain"
-  />
+          {/* Logo */}
+          <button
+            onClick={() => scrollToSection("top")}
+            className="flex items-center gap-2 sm:gap-3"
+          >
+            <Image
+              src="/logo/logo3.png"
+              alt="Sarva Natural Foods"
+              width={280}
+              height={100}
+              priority
+              className="h-16 sm:h-16 md:h-18 lg:h-20 w-auto object-contain"
+            />
 
-  {/* Brand Name */}
-  <span className="text-[#5e4521] font-semibold tracking-wide
+            {/* Brand Name */}
+            <span className="text-[#5e4521] font-semibold tracking-wide
   text-sm sm:text-base md:text-lg lg:text-xl">
-    Sarva Natural Foods
-  </span>
-</button>
+              Sarva Natural Foods
+            </span>
+          </button>
 
-  {/* Desktop Menu */}
-  <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
-    {navLinks.map((link) => (
-      <button
-        key={link.label}
-        onClick={() => scrollToSection(link.section)}
-        className="text-[#5e4521] hover:text-[#2f1b05] transition duration-200 font-medium relative group"
-      >
-        {link.label}
-      </button>
-    ))}
-  </div>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+            {navLinks.map((link) => (
+              <button
+                key={link.label}
+                onClick={() => scrollToSection(link.section)}
+                className="text-[#5e4521] hover:text-[#2f1b05] transition duration-200 font-medium relative group"
+              >
+                {link.label}
+              </button>
+            ))}
+          </div>
 
-  {/* Mobile Menu Icon */}
-  <div className="md:hidden">
-    <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="text-[#5e4521] p-2 rounded-xl bg-white/80 shadow"
-    >
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
-    </button>
-  </div>
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-[#5e4521] p-2 rounded-xl bg-white/80 shadow"
+            >
+              {isOpen ? <CloseIcon /> : <MenuIcon />}
+            </button>
+          </div>
 
-</div>
+        </div>
 
         {isOpen && (
           <div className="md:hidden mt-4 bg-white/90 border border-[#fde4b0] rounded-2xl p-4 shadow-xl animate-fade-in-up">
