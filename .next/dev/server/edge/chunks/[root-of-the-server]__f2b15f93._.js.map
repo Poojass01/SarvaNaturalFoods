@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\nimport type { NextRequest } from \"next/server\";\r\n\r\nexport function middleware(req: NextRequest) {\r\n  const host = req.headers.get(\"host\");\r\n\r\n  // Block ALL access from Vercel domain\r\n  if (host?.includes(\"vercel.app\")) {\r\n    return new NextResponse(null, { status: 404 }); \r\n  }\r\n\r\n  return NextResponse.next();\r\n}\r\n\r\nexport const config = {\r\n  matcher: \"/:path*\",\r\n};"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAGO,SAAS,WAAW,GAAgB;IACzC,MAAM,OAAO,IAAI,OAAO,CAAC,GAAG,CAAC;IAE7B,sCAAsC;IACtC,IAAI,MAAM,SAAS,eAAe;QAChC,OAAO,IAAI,gMAAY,CAAC,MAAM;YAAE,QAAQ;QAAI;IAC9C;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;AACX"}}]
+}

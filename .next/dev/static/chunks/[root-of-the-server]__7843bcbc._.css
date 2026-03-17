@@ -689,10 +689,6 @@ body {
   inset: 0;
 }
 
-.-bottom-1 {
-  bottom: -.25rem;
-}
-
 .bottom-0 {
   bottom: 0;
 }
@@ -870,10 +866,6 @@ body {
   aspect-ratio: 16 / 9;
 }
 
-.h-0\.5 {
-  height: .125rem;
-}
-
 .h-1 {
   height: .25rem;
 }
@@ -884,6 +876,10 @@ body {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-2 {
@@ -966,10 +962,6 @@ body {
   height: 100%;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -980,10 +972,6 @@ body {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-0 {
-  width: 0;
 }
 
 .w-12 {
@@ -1718,12 +1706,12 @@ body {
   letter-spacing: .4em;
 }
 
-.tracking-wider {
-  letter-spacing: .05em;
-}
-
 .tracking-wide {
   letter-spacing: .025em;
+}
+
+.tracking-wider {
+  letter-spacing: .05em;
 }
 
 .text-\[\#2a1b08\] {
@@ -2123,12 +2111,6 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-xl:hover {
-  --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .focus\:outline-none:focus {
   outline-offset: 2px;
   outline: 2px solid #0000;
@@ -2143,10 +2125,6 @@ body {
 .focus\:ring-\[\#f4a621\]:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(244 166 33 / var(--tw-ring-opacity, 1));
-}
-
-.group:hover .group-hover\:w-full {
-  width: 100%;
 }
 
 .group:hover .group-hover\:scale-105 {
@@ -2405,10 +2383,6 @@ body {
     display: none;
   }
 
-  .md\:h-20 {
-    height: 5rem;
-  }
-
   .md\:h-\[350px\] {
     height: 350px;
   }
@@ -2440,13 +2414,13 @@ body {
     line-height: 1;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -2474,10 +2448,6 @@ body {
 
   .lg\:h-20 {
     height: 5rem;
-  }
-
-  .lg\:h-24 {
-    height: 6rem;
   }
 
   .lg\:h-32 {
