@@ -61,10 +61,10 @@ export default function Navbar() {
             />
 
             {/* Brand Name */}
-            <span className="text-[#5e4521] font-semibold tracking-wide
-  text-sm sm:text-base md:text-lg lg:text-xl">
-              Sarva Natural Foods
-            </span>
+           <span className="text-[#5e4521] font-semibold tracking-wide
+  text-lg sm:text-xl md:text-2xl lg:text-3xl">
+  Sarva Natural Foods
+</span>
           </button>
 
           {/* Desktop Menu */}
